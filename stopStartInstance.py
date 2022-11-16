@@ -9,7 +9,7 @@ def lambda_handler(event, context):
 
 # Client
     client = boto3.client("ec2")
-    InstanceId = ['i-0fe3a1b6c42a19e97']
+    InstanceId = ['{ID_INSTANCE}'] #Replace {ID_INSTANCE} by ec2 instance-id
 
 # Stopping instance
     client.stop_instances(InstanceIds=InstanceId)
